@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="cdt.managedbuild.toolchain.gnu.base.781452161" name="Default">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="org.eclipse.cdt.managedbuilder.core.GCCBuildCommandParser">
+				<language id="org.eclipse.cdt.core.gcc">
+					<resource project-relative-path="src/client.c">
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="libraryPath" name="/${ProjName}/lib">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="libraryFile" name="libcurl.a"/>
+						<entry kind="libraryFile" name="libjson-c.a"/>
+					</resource>
+					<resource project-relative-path="src/server.c">
+						<entry kind="includePath" name="/${ProjName}/include">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="libraryPath" name="/${ProjName}/lib">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="libraryFile" name="libcurl.a"/>
+						<entry kind="libraryFile" name="libjson-c.a"/>
+					</resource>
+				</language>
+			</provider>
+		</extension>
+	</configuration>
+</project>

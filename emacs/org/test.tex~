@@ -1,0 +1,50 @@
+% Created 2014-06-25 Wed 13:46
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{soul}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+
+\title{\textbf{Crash的用法\}}
+\author{}
+\date{25 June 2014}
+
+\begin{document}
+
+\maketitle
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+\vspace*{1cm}
+\section{org-mode}
+\label{sec-1}
+
+\subsection{Crash introduction}
+\label{sec-1.1}
+
+\section{Crash Usage}
+\label{sec-2}
+
+\subsection{Crash Usage}
+\label{sec-2.1}
+
+\subsubsection{example 1}
+\label{sec-2.1.1}
+
+\subsubsection{example 2}
+\label{sec-2.1.2}
+
+\section{可以导出其它格式}
+\label{sec-3}
+
+\subsection{支持html, pdf等格式}
+\label{sec-3.1}
+
+
+\end{document}

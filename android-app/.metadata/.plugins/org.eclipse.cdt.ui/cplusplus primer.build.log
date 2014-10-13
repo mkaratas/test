@@ -1,0 +1,18 @@
+16:31:16 **** Incremental Build of configuration Debug for project cplusplus primer ****
+make all 
+Building file: ../OOP/Quote.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"OOP/Quote.d" -MT"OOP/Quote.d" -o "OOP/Quote.o" "../OOP/Quote.cpp"
+In file included from ../OOP/Quote.cpp:9:0:
+../OOP/Quote.h:16:12: warning: defaulted and deleted functions only available with -std=c++0x or -std=gnu++0x [enabled by default]
+../OOP/Quote.h:21:21: warning: defaulted and deleted functions only available with -std=c++0x or -std=gnu++0x [enabled by default]
+../OOP/Quote.h:21:21: error: ‘virtual Quote::~Quote()’ declared virtual cannot be defaulted in the class body
+../OOP/Quote.h:26:17: error: ISO C++ forbids initialization of member ‘price’ [-fpermissive]
+../OOP/Quote.h:26:17: error: making ‘price’ static [-fpermissive]
+../OOP/Quote.h:26:17: error: ISO C++ forbids in-class initialization of non-const static member ‘price’
+../OOP/Quote.h: In constructor ‘Quote::Quote(const string&, double)’:
+../OOP/Quote.h:17:69: error: ‘double Quote::price’ is a static data member; it can only be initialized at its definition
+make: *** [OOP/Quote.o] Error 1
+
+16:31:16 Build Finished (took 213ms)
+

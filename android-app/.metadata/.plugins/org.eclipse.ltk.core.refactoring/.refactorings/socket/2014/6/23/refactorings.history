@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;socket/include/service.h&apos; to &apos;server.h&apos;" description="Rename resource &apos;service.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="include/service.h" name="server.h" stamp="1401950736217" updateReferences="true"/>
+</session>

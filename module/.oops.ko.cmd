@@ -1,0 +1,1 @@
+cmd_/home/CORPUSERS/xp014721/Desktop/test/module/oops.ko := arm-linux-androideabi-ld -EL -r  -T /home/CORPUSERS/xp014721/workspace/tianchi/kernel/scripts/module-common.lds --build-id  -o /home/CORPUSERS/xp014721/Desktop/test/module/oops.ko /home/CORPUSERS/xp014721/Desktop/test/module/oops.o /home/CORPUSERS/xp014721/Desktop/test/module/oops.mod.o

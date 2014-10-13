@@ -1,0 +1,20 @@
+#Wed Apr 16 14:32:52 CST 2014
+content_assist_proposals_foreground=60,60,60
+spelling_locale_initialized=true
+sp_cleanup.format_source_code_changes_only=false
+sp_cleanup.format_source_code=false
+sp_cleanup.organize_imports=false
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+org.eclipse.jdt.ui.editor.tab.width=
+sp_cleanup.on_save_use_additional_actions=true
+sp_cleanup.add_missing_annotations=false
+sp_cleanup.remove_unnecessary_casts=false
+sp_cleanup.remove_trailing_whitespaces=true
+org.eclipse.jdt.ui.formatterprofiles.version=12
+content_assist_proposals_background=255,255,255
+useQuickDiffPrefPage=true
+editor_save_participant_org.eclipse.jdt.ui.postsavelistener.cleanup=true
+sp_cleanup.make_variable_declarations_final=false
+sp_cleanup.remove_trailing_whitespaces_all=true

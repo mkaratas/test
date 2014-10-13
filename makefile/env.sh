@@ -1,0 +1,3 @@
+T=$(gettop)
+
+echo $T

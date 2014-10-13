@@ -1,0 +1,7 @@
+16:32:26 **** Build of configuration Default for project sockets ****
+make all 
+gcc -I/home/CORPUSERS/xp014721/workspace/mytask/yueting_cjz/include -o server src/server.c -L/home/CORPUSERS/xp014721/workspace/mytask/yueting_cjz/lib -lcurl -pthread -ljson-c
+gcc -I/home/CORPUSERS/xp014721/workspace/mytask/yueting_cjz/include -o client src/client.c -L/home/CORPUSERS/xp014721/workspace/mytask/yueting_cjz/lib -lcurl -pthread -ljson-c
+16:32:51 **** Incremental Build of configuration Default for project sockets ****
+make all 
+make: Nothing to be done for `all'.

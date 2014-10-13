@@ -1,0 +1,6 @@
+16:06:21 **** Clean-only build of configuration Default for project socket ****
+make clean 
+rm -rf server client *.o .*.swp
+
+16:06:21 Build Finished (took 70ms)
+

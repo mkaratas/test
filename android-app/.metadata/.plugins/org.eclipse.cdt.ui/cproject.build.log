@@ -1,0 +1,6 @@
+15:58:17 **** Clean-only build of configuration Default for project cproject ****
+make clean 
+Makefile:1: *** missing separator.  Stop.
+
+15:58:17 Build Finished (took 65ms)
+

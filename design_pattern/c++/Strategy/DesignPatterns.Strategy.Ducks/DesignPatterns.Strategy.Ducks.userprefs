@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FlyNoWay.cs">
+    <Files>
+      <File FileName="Duck.cs" Line="1" Column="1" />
+      <File FileName="FlyNoWay.cs" Line="1" Column="1" />
+      <File FileName="FlyWithWings.cs" Line="1" Column="1" />
+      <File FileName="IFlyBehavior.cs" Line="1" Column="1" />
+      <File FileName="IQuackBehavior.cs" Line="1" Column="1" />
+      <File FileName="MallardDuck.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

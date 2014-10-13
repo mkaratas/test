@@ -1,0 +1,6 @@
+16:05:47 **** Incremental Build of configuration Default for project cproj ****
+make all 
+make: Nothing to be done for `all'.
+
+16:05:47 Build Finished (took 63ms)
+
