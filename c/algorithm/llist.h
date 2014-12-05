@@ -2,6 +2,8 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+#define ACCESS_ONCE(x) ( *(volatile typeof(x)*)&(x))
+
 #define container_of(ptr, type, member) ( { \
 	const typeof( ((type*)0)->member ) *__mptr = (ptr);  \
 	(type*)( (char *)__mptr - offsetof(type, member) );} )
@@ -46,5 +48,47 @@ static inline void init_llist_head(struct llist_head *list)
 
 #define llist_for_each_entry(pos, node, member) 	\
 	for ( (pos) = llist_entry((node), typeof(*(pos)), member);  \
-			(pos)->member->next; 	\
+			&(pos)->member != NULL; 	\
 			(pos) = llist_entry((pos)->member.next, typeof(*pos), member) )
+
+static inline bool llist_empty(const struct llist_head *head)
+{
+	return ACCESS_ONCE(head->first) == NULL;
+}
+
+static inline struct llist_node *llist_next(struct llist_node *node)
+{
+	return node->next;
+}
+
+static inline bool llist_add(struct llist_node *new, struct llist_head *head)
+{
+	struct llist_node *entry;
+	entry = head->first;
+	for(;;) {
+		if (!entry) {
+			new->next = entry;
+			entry = new;
+		}
+		entry = entry->next;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
