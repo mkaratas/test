@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <marco.h>
 
+void __constructor main_init(void)
+{
+	printf("constructor\n");
+}
+
 int main(int argc, char **argv)
 {
 /*
