@@ -1,6 +1,7 @@
 /* marco.h -- head file
  *
  * Written by Jianzhong Cui, 2014 (cjzswust@gmail.com)
+ * Copyright (C) 2014 Jianzhong Cui
  * 
  * Brief:
  *    This file is a set of stardand marco extanded in Gnu C 
@@ -8,7 +9,7 @@
 
 #ifndef __MARCO_HEAD_H__
 
-
+/********************************** COPYRIGHT BEGIN **********************************/
 #define COMPILE_DATE __DATE__
 #define COMPILE_TIME __TIME__
 
@@ -25,7 +26,14 @@ Time    : %s \n\
 #define PRINT_BANNER(NAME) printf(banner, #NAME,  COMPILE_DATE, COMPILE_TIME)
 #define BANNER(NAME) banner, #NAME, COMPILE_DATE, COMPILE_TIME
 
+/********************************** COPYRIGHT END **********************************/
 
+/*
+ * These extensions are officially claimed in GCC Manual. 
+ * More details you can visit gcc onlinedocs
+ * Website: https://gcc.gnu.org/onlinedocs/
+ */
+/*********************************GNUC EXTENSIONS **********************************/
 #ifdef __GNUC__
 /* caculate maximum and minimum of two parameter 
  * maxint(a, b)  return max value between a and b
@@ -75,6 +83,47 @@ Time    : %s \n\
 #define __constructor __attribute((constructor))
 #define __destructor __attribute((destructor))
 
-#endif
+#endif /* GNUC */
 
-#endif
+/****************************** DEBUG BEGIN *************************************/
+/*
+ * Debug print information format macro define
+ * if defined COLOR_DEBUG, the debug message will be printed with different colors
+ * if defined DEBUG      , the debug message will be printed in black
+ * if neither COLOR_DEBUG nor DEBUG is defined , nothing will be printed, this is usually
+ * used to beautify output and optimize performance.
+ */
+
+#define COLOR_BLACK "\033[30m"
+#define COLOR_RED "\033[31m"
+#define COLOR_GREEN "\033[32m"
+#define COLOR_YELLOW "\033[33m"
+#define COLOR_BLUE "\033[34m"
+#define COLOR_PURPLE "\033[35m"
+#define COLOR_SKY "\033[36m"
+#define COLOR_WHITE "\033[37m"
+
+#define COLOR_END "\033[0m"
+
+#define __COLOR_FORMAT(format, color) \
+	COLOR_##color format COLOR_END
+
+#define COLOR_DEBUG
+
+#ifdef COLOR_DEBUG
+#define debug_info(format, ...) fprintf(stdout, __COLOR_FORMAT(format, BLACK), __VA_ARGS__)
+#define debug_warning(format, ...) fprintf(stderr, __COLOR_FORMAT(format, YELLOW), __VA_ARGS__)
+#define debug_error(format, ...) fprintf(stderr, __COLOR_FORMAT(format, RED), __VA_ARGS__)
+#elif DEBUG
+#define debug_info(format, ...) fprintf(stdout, format, __VA_ARGS__)
+#define debug_warning(format, ...) fprintf(stdout, format, __VA_ARGS__)
+#define debug_error(format, ...) fprintf(stderr, format, __VA_ARGS__)
+#else
+#define debug_info(format, ...)
+#define debug_warning(format, ...)
+#define debug_error(format, ...)
+#endif /* COLOR_DEBUG and DEBUG */
+
+/****************************** DEBUG END *************************************/
+
+#endif /* __MARCO_HEAD_H__ */
