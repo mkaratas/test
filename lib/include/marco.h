@@ -33,7 +33,7 @@ Time    : %s \n\
  * More details you can visit gcc onlinedocs
  * Website: https://gcc.gnu.org/onlinedocs/
  */
-/*********************************GNUC EXTENSIONS **********************************/
+/********************************* GNUC EXTENSIONS **********************************/
 #ifdef __GNUC__
 /* caculate maximum and minimum of two parameter 
  * maxint(a, b)  return max value between a and b
@@ -77,13 +77,26 @@ Time    : %s \n\
 #define __weak __attribute((weak))
 
 /*
- * functions with __constructor or __destructor can be used as constructor or 
- * destructor of main function
+ * The __constructor attribute causes the function to be called automatically before
+ * execution enters main(). Similarly, the __destructor attribute causes the function
+ * to be called automatically after main() completes or exit() is called.
  */
-#define __constructor __attribute((constructor))
-#define __destructor __attribute((destructor))
+#define __constructor __attribute__((constructor))
+#define __destructor __attribute__((destructor))
+
+/*
+ * The __deprecated attribute results in a warning if the function is uesd anywhere
+ * in the source file. This is useful when identifying functions that are expected 
+ * to be removed in a future version of a program.
+ */
+#define __deprecated __attribute__((deprecated))
+
+
+#define __packed __attribute__((packed))
 
 #endif /* GNUC */
+
+/*************************** GNUC EXTENSIONS END ********************************/
 
 /****************************** DEBUG BEGIN *************************************/
 /*
