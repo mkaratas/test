@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <marco.h>
 
+
 void __constructor main_init(void)
 {
 	printf("constructor\n");
@@ -21,6 +22,8 @@ int main(int argc, char **argv)
 */
 //	PRINT_BANNER;
 	printf(BANNER(test));
+
+	debug_error("cjz debug %s\n", "hehe");
 
 	return 0;
 }
