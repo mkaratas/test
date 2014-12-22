@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/CORPUSERS/xp014721/workspace/tianchi/kernel/include/linux'
+let g:netrw_dirhist_2='/home/CORPUSERS/xp014721/Downloads/linux-3.13.5/Documentation/early-userspace'
+let g:netrw_dirhist_3='/home/CORPUSERS/xp014721/workspace/tianchi/kernel/arch/arm/boot/dts'
+let g:netrw_dirhist_4='/home/CORPUSERS/xp014721/workspace/tianchi/frameworks/base/cmds/app_process'
+let g:netrw_dirhist_5='/home/CORPUSERS/xp014721/workspace/android5/frameworks/base/cmds/app_process'
+let g:netrw_dirhist_6='/home/CORPUSERS/xp014721/workspace/android5/frameworks/base/core/jni'
+let g:netrw_dirhist_7='/home/CORPUSERS/xp014721/workspace/android5/packages/apps/Camera2/tests_camera'
