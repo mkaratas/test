@@ -41,6 +41,9 @@ Time    : %s \n\
  *
  * max(a, b)
  * min(a, b)
+ * 
+ * usually #define max(a, b) (a>b)?(a):(b) can lead to a incorrect result by caculate twice.
+ * eg: max(n1++, n2--)
  */
 #define maxint(a, b) \
 	({ int _a = (a), _b = (b); _a > _b ? _a : _b; })
