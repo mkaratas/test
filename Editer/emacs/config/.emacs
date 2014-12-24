@@ -1,0 +1,13 @@
+(require 'cedet)
+(require 'eieio)
+(require 'semantic)
+(require 'srecode)
+(require 'ede)
+(require 'speedbar)
+;(require 'cogre)
+;(require 'cedet-contrib)
+
+(global-set-key [M-left] 'windmove-left)
+(global-set-key [M-right] 'windmove-right)
+(global-set-key [M-up] 'windmove-up)
+(global-set-key [M-down] 'windmove-down)
