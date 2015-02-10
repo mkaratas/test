@@ -1,25 +1,12 @@
 #include <iostream>
+#include "ProcessState.h"
+
 using namespace std;
-class A {
-public:
-	A() {cout << "A constructor\n";}
-	~A() {}
-
-	
-};
-
-class B {
-public:
-	B() {cout << "B constructor\n";}
-	~B() {}
-
-private:
-	A a;
-};
+using namespace android;
 
 int main(int argc, char **argv)
 {
-	B b;
+	ProcessState::self();
 
 	return 0;
 }
