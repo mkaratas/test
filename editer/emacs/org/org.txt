@@ -1,3 +1,0 @@
-#+TITLE:Title of the document
-#+AUTHOR:Jianzhong Cui
-#+DATE:2014-06-25
