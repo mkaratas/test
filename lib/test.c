@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <marco.h>
 
+void __deprecated hello(void)
+{
+	printf("deprecated function\n");
+}
+
 
 void __constructor main_init(void)
 {
@@ -24,6 +29,8 @@ int main(int argc, char **argv)
 	printf(BANNER(test));
 
 	debug_error("cjz debug %s\n", "hehe");
+	
+	hello();
 
 	return 0;
 }

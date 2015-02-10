@@ -1,5 +1,15 @@
 #$(CURDIR)/Makefile Makefile: ;
 
+#Use "make V=1" to see the full command
+ifeq ("$(origin V)", "command line")
+	KBUILD_VERBOSE = $(V)
+endif
+ifndef KBUILD_VERBOSE
+	KBUILD_VERBOSE = 0
+endif
+
+
+
 srctree := $(if $(CURDIR),,) 
 objtree := $(CURDIR)
 src:=$(srctree)
@@ -28,12 +38,21 @@ CHECK       = sparse
 INCLUDE    := \
         -Iinclude \
 
-CFLAGS += -O2 -Wall
+CFLAGS += -O2 -Wall -Wdeprecated-declarations
 
-all:test
+SRCS := \
+	test.c \
+	include/marco.h
 
-test: test.c include/marco.h
-	$(CC) $(CFLAGS) $(INCLUDE) -o $@ $^
+all:test log
+
+.PHONY: log
+log:
+	echo $(KBUILD_VERBOSE)
+
+#test: test.c include/marco.h
+test: $(SRCS)
+	$(CC) $(CFLAGS) $(INCLUDE) -o $@ $(filter %c, $(SRCS))
 
 .PHONY:clean
 clean:
