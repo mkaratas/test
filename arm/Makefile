@@ -1,4 +1,5 @@
-CROSS_COMPILE=/home/CORPUSERS/xp014721/Downloads/usr/bin/arm-none-eabi-
+#CROSS_COMPILE=/home/CORPUSERS/xp014721/Downloads/usr/bin/arm-none-eabi-
+CROSS_COMPILE=/home/CORPUSERS/xp014721/Downloads/arm_gcc/gcc-arm-none-eabi-4_8-2014q1/bin/arm-none-eabi-
 
 ARCH=arm
 # Make variables (CC, etc...)
@@ -16,9 +17,13 @@ OBJDUMP     = $(CROSS_COMPILE)objdump
 export ARCH CROSS_COMPILE AS LD CC
 export CPP AR NM STRIP OBJCOPY OBJDUMP
 
+CFLAGS+= --specs=nosys.specs -g
 
-test: test.o
-	$(CROSS_COMPILE)gcc -o test test.o
+test: test.c
+	$(CROSS_COMPILE)gcc $(CFLAGS) -o $@ $^ 
+
+loop: loop.c
+	$(CROSS_COMPILE)gcc $(CFLAGS) -o $@ $^ 
 
 .PHONY:clean
 clean:
