@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app-list>
+
+	<remove>
+		<!-- apps in directory /system -->
+		<system>
+			<app>
+				<item>AndroidPay</item>
+				<item>CrashMonitor</item>
+				<item>CrashMonitorSystem</item>
+				<item>MTKLogger</item>
+				<item>dropbox</item>
+				<item>playstationapp</item>
+				<item>com.sonymobile.xperialounge.services</item>
+			</app>
+			
+			<priv-app>
+				<item> </item>
+			</priv-app>
+		</system>
+
+
+		<!-- apps in directory /data -->
+		<data>
+			<dalvik-cache>
+				<arm>
+					<item>system@app@Hangouts@Hangouts.apk@classes.dex</item>
+					<item>system@app@SomcMovieCreatorRmm-release@SomcMovieCreatorRmm-release.apk@classes.dex</item>
+				</arm>
+
+				<arm64>
+					<item>oem@priv-app@com.sonymobile.internalmarket@com.sonymobile.internalmarket.apk@classes.dex</item>
+					<item>system@app@CrashMonitor@CrashMonitor.apk@classes.dex</item>
+					<item>system@app@CrashMonitorSystem@CrashMonitorSystem.apk@classes.dex</item>
+					<item>system@app@CrashMonitorUI@CrashMonitorUI.apk@classes.dex</item>
+					<item>system@app@MTKLogger@MTKLogger.apk@classes.dex</item>
+					<item>system@app@SomcEnterpriseInstallationService@SomcEnterpriseInstallationService.apk@classes.dex</item>
+					<item>system@app@SomcSketch@SomcSketch.apk@classes.dex</item>
+					<item>system@app@com.sonymobile.xperialounge.services@com.sonymobile.xperialounge.services.apk@classes.dex</item>
+					<item>system@app@crashloguploader-eDream-release@crashloguploader-eDream-release.apk@classes.dex</item>
+					<item>system@priv-app@facebook-installer@facebook-installer.apk@classes.dex</item>
+				</arm64>	
+			</dalvik-cache>
+		</data>
+	</remove>
+
+	<install>
+		<item></item>	
+		<item></item>	
+		<item></item>	
+		<item></item>	
+		<item></item>	
+	</install>
+
+</app-list>
+
