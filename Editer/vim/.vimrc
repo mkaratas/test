@@ -31,6 +31,7 @@ nmap wm :WMToggle<cr>
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplorerMoreThanOne = 0
 nnoremap <silent> <F12> :A<CR>
 
 nnoremap <silent> <F3> :Grep<CR>
