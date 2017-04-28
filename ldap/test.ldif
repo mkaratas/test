@@ -1,0 +1,14 @@
+dn: ou=Groups,dc=uuloop,dc=com
+objectClass: organizationalUnit
+ou: Groups
+
+dn: cn=User,ou=Groups,dc=uuloop,dc=com
+objectClass: posixGroup
+cn: User
+gidNumber: 10002
+description: Group account
+
+n: ou=Users,dc=uuloop,dc=com
+u: Users
+bjectClass: top
+bjectClass: organizationalUnit

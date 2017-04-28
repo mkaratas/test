@@ -1,0 +1,771 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/fred/Downloads/node-v6.2.0-linux-x64/bin/node',
+1 verbose cli   '/home/fred/Downloads/node-v6.2.0-linux-x64/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'pcap' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData pcap
+8 silly fetchNamedPackageData pcap
+9 silly mapToRegistry name pcap
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'pcap',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'pcap',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/pcap
+14 verbose request uri https://registry.npmjs.org/pcap
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 3:56:59 PM
+17 verbose request id 3eae47f006089f79
+18 verbose etag W/"582011a8-a6ad"
+19 verbose lastModified Mon, 07 Nov 2016 05:31:20 GMT
+20 http request GET https://registry.npmjs.org/pcap
+21 http 304 https://registry.npmjs.org/pcap
+22 verbose headers { date: 'Fri, 02 Dec 2016 07:57:00 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"582011a8-a6ad"',
+22 verbose headers   age: '0',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-itm7420-ITM',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1480665420.555162,VS0,VE140',
+22 verbose headers   vary: 'Accept-Encoding' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Fri, 02 Dec 2016 07:57:00 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"582011a8-a6ad"',
+23 silly get     age: '0',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-itm7420-ITM',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1480665420.555162,VS0,VE140',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose etag https://registry.npmjs.org/pcap from cache
+25 verbose get saving pcap to /home/fred/.npm/registry.npmjs.org/pcap/.cache.json
+26 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule pcap@2.0.1 checking installable status
+40 silly cache add args [ 'pcap', null ]
+41 verbose cache add spec pcap
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'pcap',
+42 silly cache add   scope: null,
+42 silly cache add   name: 'pcap',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed pcap@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for pcap
+45 info addNameTag [ 'pcap', 'latest' ]
+46 silly mapToRegistry name pcap
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'pcap',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   name: 'pcap',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/pcap
+51 verbose addNameTag registry:https://registry.npmjs.org/pcap not in flight; fetching
+52 verbose get https://registry.npmjs.org/pcap not expired, no request
+53 silly addNameTag next cb for pcap with tag latest
+54 silly addNamed pcap@2.0.1
+55 verbose addNamed "2.0.1" is a plain semver version for pcap
+56 silly cache afterAdd pcap@2.0.1
+57 verbose afterAdd /home/fred/.npm/pcap/2.0.1/package/package.json not in flight; writing
+58 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/fred/.npm/pcap/2.0.1/package/package.json written
+60 silly fetchNamedPackageData nan
+61 silly mapToRegistry name nan
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'nan',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   name: 'nan',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/nan
+66 silly fetchOtherPackageData socketwatcher@git://github.com/zerouid/node-socketwatcher.git
+67 silly cache add args [ 'socketwatcher@git://github.com/zerouid/node-socketwatcher.git',
+67 silly cache add   null ]
+68 verbose cache add spec socketwatcher@git://github.com/zerouid/node-socketwatcher.git
+69 silly cache add parsed spec Result {
+69 silly cache add   raw: 'socketwatcher@git://github.com/zerouid/node-socketwatcher.git',
+69 silly cache add   scope: null,
+69 silly cache add   name: 'socketwatcher',
+69 silly cache add   rawSpec: 'git://github.com/zerouid/node-socketwatcher.git',
+69 silly cache add   spec: 'git://github.com/zerouid/node-socketwatcher.git',
+69 silly cache add   type: 'hosted',
+69 silly cache add   hosted:
+69 silly cache add    { type: 'github',
+69 silly cache add      ssh: 'git@github.com:zerouid/node-socketwatcher.git',
+69 silly cache add      sshUrl: 'git+ssh://git@github.com/zerouid/node-socketwatcher.git',
+69 silly cache add      httpsUrl: 'git+https://github.com/zerouid/node-socketwatcher.git',
+69 silly cache add      gitUrl: 'git://github.com/zerouid/node-socketwatcher.git',
+69 silly cache add      shortcut: 'github:zerouid/node-socketwatcher',
+69 silly cache add      directUrl: 'https://raw.githubusercontent.com/zerouid/node-socketwatcher/master/package.json' } }
+70 verbose addRemoteGit caching git://github.com/zerouid/node-socketwatcher.git
+71 verbose addRemoteGit git://github.com/zerouid/node-socketwatcher.git is a repository hosted by github
+72 silly tryClone cloning git://github.com/zerouid/node-socketwatcher.git via git://github.com/zerouid/node-socketwatcher.git
+73 verbose tryClone git-github-com-zerouid-node-socketwatcher-git-0fe8b101 not in flight; caching
+74 verbose correctMkdir /home/fred/.npm/_git-remotes correctMkdir not in flight; initializing
+75 verbose request uri https://registry.npmjs.org/nan
+76 verbose request no auth needed
+77 info attempt registry request try #1 at 3:57:01 PM
+78 verbose etag W/"5818d749-1ce1e"
+79 verbose lastModified Tue, 01 Nov 2016 17:56:25 GMT
+80 http request GET https://registry.npmjs.org/nan
+81 info git [ 'config', '--get', 'remote.origin.url' ]
+82 silly validateExistingRemote git://github.com/zerouid/node-socketwatcher.git remote.origin.url: git://github.com/zerouid/node-socketwatcher.git
+83 verbose validateExistingRemote git://github.com/zerouid/node-socketwatcher.git is updating existing cached remote /home/fred/.npm/_git-remotes/git-github-com-zerouid-node-socketwatcher-git-0fe8b101
+84 info git [ 'fetch', '-a', 'origin' ]
+85 http 304 https://registry.npmjs.org/nan
+86 verbose headers { date: 'Fri, 02 Dec 2016 07:57:01 GMT',
+86 verbose headers   via: '1.1 varnish',
+86 verbose headers   'cache-control': 'max-age=300',
+86 verbose headers   etag: 'W/"5818d749-1ce1e"',
+86 verbose headers   age: '277',
+86 verbose headers   connection: 'keep-alive',
+86 verbose headers   'x-served-by': 'cache-itm7420-ITM',
+86 verbose headers   'x-cache': 'HIT',
+86 verbose headers   'x-cache-hits': '7',
+86 verbose headers   'x-timer': 'S1480665421.069993,VS0,VE0',
+86 verbose headers   vary: 'Accept-Encoding' }
+87 silly get cb [ 304,
+87 silly get   { date: 'Fri, 02 Dec 2016 07:57:01 GMT',
+87 silly get     via: '1.1 varnish',
+87 silly get     'cache-control': 'max-age=300',
+87 silly get     etag: 'W/"5818d749-1ce1e"',
+87 silly get     age: '277',
+87 silly get     connection: 'keep-alive',
+87 silly get     'x-served-by': 'cache-itm7420-ITM',
+87 silly get     'x-cache': 'HIT',
+87 silly get     'x-cache-hits': '7',
+87 silly get     'x-timer': 'S1480665421.069993,VS0,VE0',
+87 silly get     vary: 'Accept-Encoding' } ]
+88 verbose etag https://registry.npmjs.org/nan from cache
+89 verbose get saving nan to /home/fred/.npm/registry.npmjs.org/nan/.cache.json
+90 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+91 silly resolveWithNewModule nan@1.6.2 checking installable status
+92 silly cache add args [ 'nan@~1.6.1', null ]
+93 verbose cache add spec nan@~1.6.1
+94 silly cache add parsed spec Result {
+94 silly cache add   raw: 'nan@~1.6.1',
+94 silly cache add   scope: null,
+94 silly cache add   name: 'nan',
+94 silly cache add   rawSpec: '~1.6.1',
+94 silly cache add   spec: '>=1.6.1 <1.7.0',
+94 silly cache add   type: 'range' }
+95 silly addNamed nan@>=1.6.1 <1.7.0
+96 verbose addNamed ">=1.6.1 <1.7.0" is a valid semver range for nan
+97 silly addNameRange { name: 'nan', range: '>=1.6.1 <1.7.0', hasData: false }
+98 silly mapToRegistry name nan
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry data Result {
+101 silly mapToRegistry   raw: 'nan',
+101 silly mapToRegistry   scope: null,
+101 silly mapToRegistry   name: 'nan',
+101 silly mapToRegistry   rawSpec: '',
+101 silly mapToRegistry   spec: 'latest',
+101 silly mapToRegistry   type: 'tag' }
+102 silly mapToRegistry uri https://registry.npmjs.org/nan
+103 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+104 verbose get https://registry.npmjs.org/nan not expired, no request
+105 silly addNameRange number 2 { name: 'nan', range: '>=1.6.1 <1.7.0', hasData: true }
+106 silly addNameRange versions [ 'nan',
+106 silly addNameRange   [ '0.3.0-wip',
+106 silly addNameRange     '0.3.0-wip2',
+106 silly addNameRange     '0.3.0',
+106 silly addNameRange     '0.3.1',
+106 silly addNameRange     '0.3.2',
+106 silly addNameRange     '0.4.0',
+106 silly addNameRange     '0.4.1',
+106 silly addNameRange     '0.4.2',
+106 silly addNameRange     '0.4.3',
+106 silly addNameRange     '0.4.4',
+106 silly addNameRange     '0.5.0',
+106 silly addNameRange     '0.5.1',
+106 silly addNameRange     '0.5.2',
+106 silly addNameRange     '0.6.0',
+106 silly addNameRange     '0.7.0',
+106 silly addNameRange     '0.7.1',
+106 silly addNameRange     '0.8.0',
+106 silly addNameRange     '1.0.0',
+106 silly addNameRange     '1.1.0',
+106 silly addNameRange     '1.1.1',
+106 silly addNameRange     '1.1.2',
+106 silly addNameRange     '1.2.0',
+106 silly addNameRange     '1.3.0',
+106 silly addNameRange     '1.4.0',
+106 silly addNameRange     '1.4.1',
+106 silly addNameRange     '1.5.0',
+106 silly addNameRange     '1.4.2',
+106 silly addNameRange     '1.4.3',
+106 silly addNameRange     '1.5.1',
+106 silly addNameRange     '1.5.2',
+106 silly addNameRange     '1.6.0',
+106 silly addNameRange     '1.5.3',
+106 silly addNameRange     '1.6.1',
+106 silly addNameRange     '1.6.2',
+106 silly addNameRange     '1.7.0',
+106 silly addNameRange     '1.8.0',
+106 silly addNameRange     '1.8.1',
+106 silly addNameRange     '1.8.2',
+106 silly addNameRange     '1.8.3',
+106 silly addNameRange     '1.8.4',
+106 silly addNameRange     '1.9.0',
+106 silly addNameRange     '2.0.0',
+106 silly addNameRange     '2.0.1',
+106 silly addNameRange     '2.0.2',
+106 silly addNameRange     '2.0.3',
+106 silly addNameRange     '2.0.4',
+106 silly addNameRange     '2.0.5',
+106 silly addNameRange     '2.0.6',
+106 silly addNameRange     '2.0.7',
+106 silly addNameRange     '2.0.8',
+106 silly addNameRange     '2.0.9',
+106 silly addNameRange     '2.1.0',
+106 silly addNameRange     '2.2.0',
+106 silly addNameRange     '2.2.1',
+106 silly addNameRange     '2.3.0',
+106 silly addNameRange     '2.3.1',
+106 silly addNameRange     '2.3.2',
+106 silly addNameRange     '2.3.3',
+106 silly addNameRange     '2.3.4',
+106 silly addNameRange     '2.3.5',
+106 silly addNameRange     '2.4.0' ] ]
+107 silly addNamed nan@1.6.2
+108 verbose addNamed "1.6.2" is a plain semver version for nan
+109 silly cache afterAdd nan@1.6.2
+110 verbose afterAdd /home/fred/.npm/nan/1.6.2/package/package.json not in flight; writing
+111 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+112 verbose afterAdd /home/fred/.npm/nan/1.6.2/package/package.json written
+113 verbose updateRemote git fetch -a origin (git://github.com/zerouid/node-socketwatcher.git)
+114 verbose correctMkdir /home/fred/.npm/_git-remotes correctMkdir not in flight; initializing
+115 verbose setPermissions git://github.com/zerouid/node-socketwatcher.git set permissions on /home/fred/.npm/_git-remotes/git-github-com-zerouid-node-socketwatcher-git-0fe8b101
+116 verbose resolveHead git://github.com/zerouid/node-socketwatcher.git original treeish: master
+117 info git [ 'rev-list', '-n1', 'master' ]
+118 silly resolveHead git://github.com/zerouid/node-socketwatcher.git resolved treeish: 9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d
+119 verbose resolveHead git://github.com/zerouid/node-socketwatcher.git resolved Git URL: git://github.com/zerouid/node-socketwatcher.git#9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d
+120 silly resolveHead Git working directory: /tmp/npm-28935-7a590fa6/git-cache-26940916/9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d
+121 info git [ 'clone',
+121 info git   '/home/fred/.npm/_git-remotes/git-github-com-zerouid-node-socketwatcher-git-0fe8b101',
+121 info git   '/tmp/npm-28935-7a590fa6/git-cache-26940916/9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d' ]
+122 verbose cloneResolved git://github.com/zerouid/node-socketwatcher.git clone Cloning into '/tmp/npm-28935-7a590fa6/git-cache-26940916/9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d'...
+122 verbose cloneResolved done.
+123 info git [ 'checkout', '9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d' ]
+124 verbose checkoutTreeish git://github.com/zerouid/node-socketwatcher.git checkout Note: checking out '9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d'.
+124 verbose checkoutTreeish
+124 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+124 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+124 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+124 verbose checkoutTreeish
+124 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+124 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+124 verbose checkoutTreeish
+124 verbose checkoutTreeish   git checkout -b <new-branch-name>
+124 verbose checkoutTreeish
+124 verbose checkoutTreeish HEAD is now at 9fdfdd2... NaN 1.7.0
+125 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+126 verbose updateSubmodules git://github.com/zerouid/node-socketwatcher.git submodule update
+127 verbose addLocalDirectory /home/fred/.npm/socketwatcher/0.2.1/package.tgz not in flight; packing
+128 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+129 verbose tar pack [ '/home/fred/.npm/socketwatcher/0.2.1/package.tgz',
+129 verbose tar pack   '/tmp/npm-28935-7a590fa6/git-cache-26940916/9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d' ]
+130 verbose tarball /home/fred/.npm/socketwatcher/0.2.1/package.tgz
+131 verbose folder /tmp/npm-28935-7a590fa6/git-cache-26940916/9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d
+132 verbose addLocalTarball adding from inside cache /home/fred/.npm/socketwatcher/0.2.1/package.tgz
+133 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+134 verbose addRemoteGit data._from: git://github.com/zerouid/node-socketwatcher.git
+135 verbose addRemoteGit data._resolved: git://github.com/zerouid/node-socketwatcher.git#9fdfdd2dda2518ee4bfc7ab1f3d4c65b702d5b9d
+136 silly cache afterAdd socketwatcher@0.2.1
+137 verbose afterAdd /home/fred/.npm/socketwatcher/0.2.1/package/package.json not in flight; writing
+138 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+139 verbose afterAdd /home/fred/.npm/socketwatcher/0.2.1/package/package.json written
+140 silly resolveWithNewModule socketwatcher@0.2.1 checking installable status
+141 silly fetchNamedPackageData nan
+142 silly mapToRegistry name nan
+143 silly mapToRegistry using default registry
+144 silly mapToRegistry registry https://registry.npmjs.org/
+145 silly mapToRegistry data Result {
+145 silly mapToRegistry   raw: 'nan',
+145 silly mapToRegistry   scope: null,
+145 silly mapToRegistry   name: 'nan',
+145 silly mapToRegistry   rawSpec: '',
+145 silly mapToRegistry   spec: 'latest',
+145 silly mapToRegistry   type: 'tag' }
+146 silly mapToRegistry uri https://registry.npmjs.org/nan
+147 silly resolveWithNewModule nan@1.7.0 checking installable status
+148 silly cache add args [ 'nan@~1.7.0', null ]
+149 verbose cache add spec nan@~1.7.0
+150 silly cache add parsed spec Result {
+150 silly cache add   raw: 'nan@~1.7.0',
+150 silly cache add   scope: null,
+150 silly cache add   name: 'nan',
+150 silly cache add   rawSpec: '~1.7.0',
+150 silly cache add   spec: '>=1.7.0 <1.8.0',
+150 silly cache add   type: 'range' }
+151 silly addNamed nan@>=1.7.0 <1.8.0
+152 verbose addNamed ">=1.7.0 <1.8.0" is a valid semver range for nan
+153 silly addNameRange { name: 'nan', range: '>=1.7.0 <1.8.0', hasData: false }
+154 silly mapToRegistry name nan
+155 silly mapToRegistry using default registry
+156 silly mapToRegistry registry https://registry.npmjs.org/
+157 silly mapToRegistry data Result {
+157 silly mapToRegistry   raw: 'nan',
+157 silly mapToRegistry   scope: null,
+157 silly mapToRegistry   name: 'nan',
+157 silly mapToRegistry   rawSpec: '',
+157 silly mapToRegistry   spec: 'latest',
+157 silly mapToRegistry   type: 'tag' }
+158 silly mapToRegistry uri https://registry.npmjs.org/nan
+159 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+160 verbose get https://registry.npmjs.org/nan not expired, no request
+161 silly addNameRange number 2 { name: 'nan', range: '>=1.7.0 <1.8.0', hasData: true }
+162 silly addNameRange versions [ 'nan',
+162 silly addNameRange   [ '0.3.0-wip',
+162 silly addNameRange     '0.3.0-wip2',
+162 silly addNameRange     '0.3.0',
+162 silly addNameRange     '0.3.1',
+162 silly addNameRange     '0.3.2',
+162 silly addNameRange     '0.4.0',
+162 silly addNameRange     '0.4.1',
+162 silly addNameRange     '0.4.2',
+162 silly addNameRange     '0.4.3',
+162 silly addNameRange     '0.4.4',
+162 silly addNameRange     '0.5.0',
+162 silly addNameRange     '0.5.1',
+162 silly addNameRange     '0.5.2',
+162 silly addNameRange     '0.6.0',
+162 silly addNameRange     '0.7.0',
+162 silly addNameRange     '0.7.1',
+162 silly addNameRange     '0.8.0',
+162 silly addNameRange     '1.0.0',
+162 silly addNameRange     '1.1.0',
+162 silly addNameRange     '1.1.1',
+162 silly addNameRange     '1.1.2',
+162 silly addNameRange     '1.2.0',
+162 silly addNameRange     '1.3.0',
+162 silly addNameRange     '1.4.0',
+162 silly addNameRange     '1.4.1',
+162 silly addNameRange     '1.5.0',
+162 silly addNameRange     '1.4.2',
+162 silly addNameRange     '1.4.3',
+162 silly addNameRange     '1.5.1',
+162 silly addNameRange     '1.5.2',
+162 silly addNameRange     '1.6.0',
+162 silly addNameRange     '1.5.3',
+162 silly addNameRange     '1.6.1',
+162 silly addNameRange     '1.6.2',
+162 silly addNameRange     '1.7.0',
+162 silly addNameRange     '1.8.0',
+162 silly addNameRange     '1.8.1',
+162 silly addNameRange     '1.8.2',
+162 silly addNameRange     '1.8.3',
+162 silly addNameRange     '1.8.4',
+162 silly addNameRange     '1.9.0',
+162 silly addNameRange     '2.0.0',
+162 silly addNameRange     '2.0.1',
+162 silly addNameRange     '2.0.2',
+162 silly addNameRange     '2.0.3',
+162 silly addNameRange     '2.0.4',
+162 silly addNameRange     '2.0.5',
+162 silly addNameRange     '2.0.6',
+162 silly addNameRange     '2.0.7',
+162 silly addNameRange     '2.0.8',
+162 silly addNameRange     '2.0.9',
+162 silly addNameRange     '2.1.0',
+162 silly addNameRange     '2.2.0',
+162 silly addNameRange     '2.2.1',
+162 silly addNameRange     '2.3.0',
+162 silly addNameRange     '2.3.1',
+162 silly addNameRange     '2.3.2',
+162 silly addNameRange     '2.3.3',
+162 silly addNameRange     '2.3.4',
+162 silly addNameRange     '2.3.5',
+162 silly addNameRange     '2.4.0' ] ]
+163 silly addNamed nan@1.7.0
+164 verbose addNamed "1.7.0" is a plain semver version for nan
+165 silly cache afterAdd nan@1.7.0
+166 verbose afterAdd /home/fred/.npm/nan/1.7.0/package/package.json not in flight; writing
+167 verbose correctMkdir /home/fred/.npm correctMkdir not in flight; initializing
+168 verbose afterAdd /home/fred/.npm/nan/1.7.0/package/package.json written
+169 silly loadAllDepsIntoIdealTree Finishing
+170 silly idealTree:prePrune wifi
+170 silly idealTree:prePrune ├── nan@1.6.2
+170 silly idealTree:prePrune ├── pcap@2.0.1
+170 silly idealTree:prePrune └─┬ socketwatcher@0.2.1
+170 silly idealTree:prePrune   └── nan@1.7.0
+171 silly loadIdealTree Finishing
+172 silly currentTree wifi
+173 silly idealTree wifi
+173 silly idealTree ├── nan@1.6.2
+173 silly idealTree ├── pcap@2.0.1
+173 silly idealTree └─┬ socketwatcher@0.2.1
+173 silly idealTree   └── nan@1.7.0
+174 silly generateActionsToTake Starting
+175 silly install generateActionsToTake
+176 silly generateActionsToTake Finishing
+177 silly diffTrees action count 4
+178 silly diffTrees add nan@1.6.2
+179 silly diffTrees add nan@1.7.0
+180 silly diffTrees add socketwatcher@0.2.1
+181 silly diffTrees add pcap@2.0.1
+182 silly decomposeActions action count 32
+183 silly decomposeActions fetch nan@1.6.2
+184 silly decomposeActions extract nan@1.6.2
+185 silly decomposeActions test nan@1.6.2
+186 silly decomposeActions preinstall nan@1.6.2
+187 silly decomposeActions build nan@1.6.2
+188 silly decomposeActions install nan@1.6.2
+189 silly decomposeActions postinstall nan@1.6.2
+190 silly decomposeActions finalize nan@1.6.2
+191 silly decomposeActions fetch nan@1.7.0
+192 silly decomposeActions extract nan@1.7.0
+193 silly decomposeActions test nan@1.7.0
+194 silly decomposeActions preinstall nan@1.7.0
+195 silly decomposeActions build nan@1.7.0
+196 silly decomposeActions install nan@1.7.0
+197 silly decomposeActions postinstall nan@1.7.0
+198 silly decomposeActions finalize nan@1.7.0
+199 silly decomposeActions fetch socketwatcher@0.2.1
+200 silly decomposeActions extract socketwatcher@0.2.1
+201 silly decomposeActions test socketwatcher@0.2.1
+202 silly decomposeActions preinstall socketwatcher@0.2.1
+203 silly decomposeActions build socketwatcher@0.2.1
+204 silly decomposeActions install socketwatcher@0.2.1
+205 silly decomposeActions postinstall socketwatcher@0.2.1
+206 silly decomposeActions finalize socketwatcher@0.2.1
+207 silly decomposeActions fetch pcap@2.0.1
+208 silly decomposeActions extract pcap@2.0.1
+209 silly decomposeActions test pcap@2.0.1
+210 silly decomposeActions preinstall pcap@2.0.1
+211 silly decomposeActions build pcap@2.0.1
+212 silly decomposeActions install pcap@2.0.1
+213 silly decomposeActions postinstall pcap@2.0.1
+214 silly decomposeActions finalize pcap@2.0.1
+215 silly executeActions Starting
+216 silly install executeActions
+217 silly doSerial global-install 0
+218 silly doParallel fetch 4
+219 verbose correctMkdir /home/fred/.npm/_locks correctMkdir not in flight; initializing
+220 verbose lock using /home/fred/.npm/_locks/staging-57f1d5175aca6d59.lock for /home/fred/Desktop/test/wifi/node_modules/.staging
+221 silly doParallel extract 4
+222 silly extract nan@1.6.2
+223 silly extract nan@1.7.0
+224 silly extract socketwatcher@0.2.1
+225 silly extract pcap@2.0.1
+226 verbose unbuild node_modules/.staging/nan-d163ff05
+227 verbose unbuild node_modules/.staging/nan-3fc36be9
+228 verbose unbuild node_modules/.staging/pcap-fdd2f3ec
+229 verbose unbuild node_modules/.staging/socketwatcher-472357c6
+230 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05 is being purged from base /home/fred/Desktop/test/wifi
+231 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05
+232 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9 is being purged from base /home/fred/Desktop/test/wifi
+233 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9
+234 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec is being purged from base /home/fred/Desktop/test/wifi
+235 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec
+236 verbose tar unpack /home/fred/.npm/nan/1.6.2/package.tgz
+237 verbose tar unpacking to /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05
+238 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05 is being purged
+239 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05
+240 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6 is being purged from base /home/fred/Desktop/test/wifi
+241 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6
+242 verbose tar unpack /home/fred/.npm/nan/1.7.0/package.tgz
+243 verbose tar unpacking to /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9
+244 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9 is being purged
+245 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9
+246 verbose tar unpack /home/fred/.npm/pcap/2.0.1/package.tgz
+247 verbose tar unpacking to /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec
+248 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec is being purged
+249 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec
+250 silly gunzTarPerm modes [ '775', '664' ]
+251 verbose tar unpack /home/fred/.npm/socketwatcher/0.2.1/package.tgz
+252 verbose tar unpacking to /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6
+253 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6 is being purged
+254 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6
+255 silly gunzTarPerm modes [ '775', '664' ]
+256 silly gunzTarPerm modes [ '775', '664' ]
+257 silly gunzTarPerm modes [ '775', '664' ]
+258 silly gunzTarPerm extractEntry package.json
+259 silly gunzTarPerm extractEntry package.json
+260 silly gunzTarPerm extractEntry package.json
+261 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+262 silly gunzTarPerm extractEntry package.json
+263 silly gunzTarPerm extractEntry include_dirs.js
+264 silly gunzTarPerm extractEntry LICENSE.md
+265 silly gunzTarPerm extractEntry include_dirs.js
+266 silly gunzTarPerm extractEntry LICENSE.md
+267 silly gunzTarPerm extractEntry .npmignore
+268 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+269 silly gunzTarPerm extractEntry README.md
+270 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+271 silly gunzTarPerm extractEntry .npmignore
+272 silly gunzTarPerm extractEntry README.md
+273 silly gunzTarPerm extractEntry util.js
+274 silly gunzTarPerm modified mode [ 'util.js', 420, 436 ]
+275 silly gunzTarPerm extractEntry .dntrc
+276 silly gunzTarPerm extractEntry appveyor.yml
+277 silly gunzTarPerm extractEntry .dntrc
+278 silly gunzTarPerm extractEntry appveyor.yml
+279 silly gunzTarPerm extractEntry LICENSE
+280 silly gunzTarPerm extractEntry binding.gyp
+281 silly gunzTarPerm extractEntry dns_cache.js
+282 silly gunzTarPerm modified mode [ 'dns_cache.js', 420, 436 ]
+283 silly gunzTarPerm extractEntry pcap.js
+284 silly gunzTarPerm modified mode [ 'pcap.js', 420, 436 ]
+285 silly gunzTarPerm extractEntry tcp_tracker.js
+286 silly gunzTarPerm modified mode [ 'tcp_tracker.js', 420, 436 ]
+287 silly gunzTarPerm extractEntry nan.h
+288 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+289 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+290 silly gunzTarPerm extractEntry nan_new.h
+291 silly gunzTarPerm extractEntry nan_string_bytes.h
+292 silly gunzTarPerm extractEntry CHANGELOG.md
+293 silly gunzTarPerm extractEntry nan.h
+294 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+295 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+296 silly gunzTarPerm extractEntry nan_new.h
+297 silly gunzTarPerm extractEntry nan_string_bytes.h
+298 silly gunzTarPerm extractEntry CHANGELOG.md
+299 silly gunzTarPerm extractEntry socket_watcher.cpp
+300 silly gunzTarPerm extractEntry socket_watcher.hpp
+301 silly gunzTarPerm extractEntry test.js
+302 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+303 silly gunzTarPerm extractEntry wscript
+304 silly gunzTarPerm extractEntry changelog.md
+305 silly gunzTarPerm modified mode [ 'changelog.md', 420, 436 ]
+306 silly gunzTarPerm extractEntry decode/arp.js
+307 silly gunzTarPerm modified mode [ 'decode/arp.js', 420, 436 ]
+308 silly gunzTarPerm extractEntry decode/ipv4_addr.js
+309 silly gunzTarPerm modified mode [ 'decode/ipv4_addr.js', 420, 436 ]
+310 silly gunzTarPerm extractEntry decode/ipv6.js
+311 silly gunzTarPerm modified mode [ 'decode/ipv6.js', 420, 436 ]
+312 silly gunzTarPerm extractEntry decode/ipv6_addr.js
+313 silly gunzTarPerm modified mode [ 'decode/ipv6_addr.js', 420, 436 ]
+314 silly gunzTarPerm extractEntry decode/ipv4.js
+315 silly gunzTarPerm modified mode [ 'decode/ipv4.js', 420, 436 ]
+316 silly gunzTarPerm extractEntry decode/null_packet.js
+317 silly gunzTarPerm modified mode [ 'decode/null_packet.js', 420, 436 ]
+318 silly gunzTarPerm extractEntry decode/pcap_packet.js
+319 silly gunzTarPerm modified mode [ 'decode/pcap_packet.js', 420, 436 ]
+320 silly gunzTarPerm extractEntry decode/radio_frame.js
+321 silly gunzTarPerm modified mode [ 'decode/radio_frame.js', 420, 436 ]
+322 silly gunzTarPerm extractEntry decode/radio_packet.js
+323 silly gunzTarPerm modified mode [ 'decode/radio_packet.js', 420, 436 ]
+324 silly gunzTarPerm extractEntry decode/raw_packet.js
+325 silly gunzTarPerm modified mode [ 'decode/raw_packet.js', 420, 436 ]
+326 silly gunzTarPerm extractEntry decode/index.js
+327 silly gunzTarPerm modified mode [ 'decode/index.js', 420, 436 ]
+328 silly gunzTarPerm extractEntry decode/sll_addr.js
+329 silly gunzTarPerm modified mode [ 'decode/sll_addr.js', 420, 436 ]
+330 silly gunzTarPerm extractEntry decode/igmp.js
+331 silly gunzTarPerm modified mode [ 'decode/igmp.js', 420, 436 ]
+332 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6/node_modules is being purged
+333 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6/node_modules
+334 silly gunzTarPerm extractEntry decode/sll_packet.js
+335 silly gunzTarPerm modified mode [ 'decode/sll_packet.js', 420, 436 ]
+336 silly gunzTarPerm extractEntry decode/icmp.js
+337 silly gunzTarPerm modified mode [ 'decode/icmp.js', 420, 436 ]
+338 silly gunzTarPerm extractEntry decode/tcp.js
+339 silly gunzTarPerm modified mode [ 'decode/tcp.js', 420, 436 ]
+340 silly gunzTarPerm extractEntry decode/ethernet_packet.js
+341 silly gunzTarPerm modified mode [ 'decode/ethernet_packet.js', 420, 436 ]
+342 silly gunzTarPerm extractEntry decode/udp.js
+343 silly gunzTarPerm modified mode [ 'decode/udp.js', 420, 436 ]
+344 silly gunzTarPerm extractEntry decode/ethernet_addr.js
+345 silly gunzTarPerm modified mode [ 'decode/ethernet_addr.js', 420, 436 ]
+346 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9/node_modules is being purged
+347 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9/node_modules
+348 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05/node_modules is being purged
+349 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05/node_modules
+350 silly gunzTarPerm extractEntry decode/vlan.js
+351 silly gunzTarPerm modified mode [ 'decode/vlan.js', 420, 436 ]
+352 silly gunzTarPerm extractEntry decode/dns.js
+353 silly gunzTarPerm modified mode [ 'decode/dns.js', 420, 436 ]
+354 silly gunzTarPerm extractEntry decode/websocket.js
+355 silly gunzTarPerm modified mode [ 'decode/websocket.js', 420, 436 ]
+356 silly gunzTarPerm extractEntry decode/llc_packet.js
+357 silly gunzTarPerm modified mode [ 'decode/llc_packet.js', 420, 436 ]
+358 silly gunzTarPerm extractEntry .jshintrc
+359 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+360 silly gunzTarPerm extractEntry node_ko_article.md
+361 silly gunzTarPerm modified mode [ 'node_ko_article.md', 420, 436 ]
+362 silly gunzTarPerm extractEntry test.js~
+363 silly gunzTarPerm modified mode [ 'test.js~', 420, 436 ]
+364 silly gunzTarPerm extractEntry .jshintrc~
+365 silly gunzTarPerm modified mode [ '.jshintrc~', 420, 436 ]
+366 silly gunzTarPerm extractEntry pcap_binding.cc
+367 silly gunzTarPerm modified mode [ 'pcap_binding.cc', 420, 436 ]
+368 silly gunzTarPerm extractEntry pcap_session.cc
+369 silly gunzTarPerm modified mode [ 'pcap_session.cc', 420, 436 ]
+370 silly gunzTarPerm extractEntry pcap_session.h
+371 silly gunzTarPerm modified mode [ 'pcap_session.h', 420, 436 ]
+372 silly gunzTarPerm extractEntry binding.gyp
+373 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 436 ]
+374 silly gunzTarPerm extractEntry examples/decode_bench.js
+375 silly gunzTarPerm modified mode [ 'examples/decode_bench.js', 493, 509 ]
+376 silly gunzTarPerm extractEntry examples/network_grep.js
+377 silly gunzTarPerm modified mode [ 'examples/network_grep.js', 420, 436 ]
+378 silly gunzTarPerm extractEntry examples/jquery.min.js
+379 silly gunzTarPerm modified mode [ 'examples/jquery.min.js', 420, 436 ]
+380 silly gunzTarPerm extractEntry examples/jquery.flot.js
+381 silly gunzTarPerm modified mode [ 'examples/jquery.flot.js', 420, 436 ]
+382 silly gunzTarPerm extractEntry examples/dns.js
+383 silly gunzTarPerm modified mode [ 'examples/dns.js', 420, 436 ]
+384 silly gunzTarPerm extractEntry examples/inject.js
+385 silly gunzTarPerm modified mode [ 'examples/inject.js', 420, 436 ]
+386 silly gunzTarPerm extractEntry examples/multiple_interfaces
+387 silly gunzTarPerm modified mode [ 'examples/multiple_interfaces', 493, 509 ]
+388 silly gunzTarPerm extractEntry examples/favicon.ico
+389 silly gunzTarPerm modified mode [ 'examples/favicon.ico', 420, 436 ]
+390 silly gunzTarPerm extractEntry examples/index.html
+391 silly gunzTarPerm modified mode [ 'examples/index.html', 420, 436 ]
+392 silly gunzTarPerm extractEntry examples/dns3.pcap
+393 silly gunzTarPerm modified mode [ 'examples/dns3.pcap', 420, 436 ]
+394 silly gunzTarPerm extractEntry examples/dns2.pcap
+395 silly gunzTarPerm modified mode [ 'examples/dns2.pcap', 420, 436 ]
+396 silly gunzTarPerm extractEntry examples/dns.pcap
+397 silly gunzTarPerm modified mode [ 'examples/dns.pcap', 420, 436 ]
+398 silly gunzTarPerm extractEntry examples/http_trace
+399 silly gunzTarPerm modified mode [ 'examples/http_trace', 493, 509 ]
+400 silly gunzTarPerm extractEntry examples/dns.js~
+401 silly gunzTarPerm modified mode [ 'examples/dns.js~', 420, 436 ]
+402 silly gunzTarPerm extractEntry examples/one.pcap
+403 silly gunzTarPerm modified mode [ 'examples/one.pcap', 420, 436 ]
+404 silly gunzTarPerm extractEntry examples/simple_capture
+405 silly gunzTarPerm modified mode [ 'examples/simple_capture', 493, 509 ]
+406 silly gunzTarPerm extractEntry examples/speed_server
+407 silly gunzTarPerm modified mode [ 'examples/speed_server', 493, 509 ]
+408 silly gunzTarPerm extractEntry examples/tcp_metrics
+409 silly gunzTarPerm modified mode [ 'examples/tcp_metrics', 493, 509 ]
+410 silly gentlyRm /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec/node_modules is being purged
+411 verbose gentlyRm don't care about contents; nuking /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec/node_modules
+412 silly doParallel preinstall 4
+413 silly preinstall nan@1.6.2 /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05
+414 info lifecycle nan@1.6.2~preinstall: nan@1.6.2
+415 silly preinstall nan@1.7.0 /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9
+416 info lifecycle nan@1.7.0~preinstall: nan@1.7.0
+417 silly preinstall socketwatcher@0.2.1 /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6
+418 info lifecycle socketwatcher@0.2.1~preinstall: socketwatcher@0.2.1
+419 silly preinstall pcap@2.0.1 /home/fred/Desktop/test/wifi/node_modules/.staging/pcap-fdd2f3ec
+420 info lifecycle pcap@2.0.1~preinstall: pcap@2.0.1
+421 silly lifecycle nan@1.6.2~preinstall: no script for preinstall, continuing
+422 silly lifecycle nan@1.7.0~preinstall: no script for preinstall, continuing
+423 silly lifecycle socketwatcher@0.2.1~preinstall: no script for preinstall, continuing
+424 silly lifecycle pcap@2.0.1~preinstall: no script for preinstall, continuing
+425 silly doReverseSerial remove 0
+426 silly doSerial move 0
+427 silly doSerial finalize 4
+428 silly finalize /home/fred/Desktop/test/wifi/node_modules/nan
+429 silly finalize /home/fred/Desktop/test/wifi/node_modules/socketwatcher/node_modules/nan
+430 silly finalize /home/fred/Desktop/test/wifi/node_modules/socketwatcher
+431 silly finalize /home/fred/Desktop/test/wifi/node_modules/pcap
+432 silly doSerial build 4
+433 silly build nan@1.6.2
+434 info linkStuff nan@1.6.2
+435 silly linkStuff nan@1.6.2 has /home/fred/Desktop/test/wifi/node_modules as its parent node_modules
+436 verbose linkBins nan@1.6.2
+437 verbose linkMans nan@1.6.2
+438 silly build nan@1.7.0
+439 info linkStuff nan@1.7.0
+440 silly linkStuff nan@1.7.0 has /home/fred/Desktop/test/wifi/node_modules/socketwatcher/node_modules as its parent node_modules
+441 verbose linkBins nan@1.7.0
+442 verbose linkMans nan@1.7.0
+443 silly build socketwatcher@0.2.1
+444 info linkStuff socketwatcher@0.2.1
+445 silly linkStuff socketwatcher@0.2.1 has /home/fred/Desktop/test/wifi/node_modules as its parent node_modules
+446 verbose linkBins socketwatcher@0.2.1
+447 verbose linkMans socketwatcher@0.2.1
+448 silly build pcap@2.0.1
+449 info linkStuff pcap@2.0.1
+450 silly linkStuff pcap@2.0.1 has /home/fred/Desktop/test/wifi/node_modules as its parent node_modules
+451 verbose linkBins pcap@2.0.1
+452 verbose linkMans pcap@2.0.1
+453 silly doSerial global-link 0
+454 silly doParallel update-linked 0
+455 silly doSerial install 4
+456 silly install nan@1.6.2 /home/fred/Desktop/test/wifi/node_modules/.staging/nan-d163ff05
+457 info lifecycle nan@1.6.2~install: nan@1.6.2
+458 silly lifecycle nan@1.6.2~install: no script for install, continuing
+459 silly install nan@1.7.0 /home/fred/Desktop/test/wifi/node_modules/.staging/nan-3fc36be9
+460 info lifecycle nan@1.7.0~install: nan@1.7.0
+461 silly lifecycle nan@1.7.0~install: no script for install, continuing
+462 silly install socketwatcher@0.2.1 /home/fred/Desktop/test/wifi/node_modules/.staging/socketwatcher-472357c6
+463 info lifecycle socketwatcher@0.2.1~install: socketwatcher@0.2.1
+464 verbose lifecycle socketwatcher@0.2.1~install: unsafe-perm in lifecycle true
+465 verbose lifecycle socketwatcher@0.2.1~install: PATH: /home/fred/Downloads/node-v6.2.0-linux-x64/lib/node_modules/npm/bin/node-gyp-bin:/home/fred/Desktop/test/wifi/node_modules/socketwatcher/node_modules/.bin:/home/fred/Desktop/test/wifi/node_modules/.bin:/home/fred/Downloads/node-v6.2.0-linux-x64/bin:/opt/qt56/bin:/opt/fred:/usr/share/redis-desktop-manager/bin:/home/fred/Downloads/mongodb-linux-x86_64-ubuntu1604-3.2.8/bin:/home/fred/Downloads/robomongo-0.9.0-rc9-linux-x86_64-0bb5668/bin:/home/fred/Downloads/node-v6.2.0-linux-x64/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+466 verbose lifecycle socketwatcher@0.2.1~install: CWD: /home/fred/Desktop/test/wifi/node_modules/socketwatcher
+467 silly lifecycle socketwatcher@0.2.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+468 silly lifecycle socketwatcher@0.2.1~install: Returned: code: 1  signal: null
+469 info lifecycle socketwatcher@0.2.1~install: Failed to exec install script
+470 verbose unlock done using /home/fred/.npm/_locks/staging-57f1d5175aca6d59.lock for /home/fred/Desktop/test/wifi/node_modules/.staging
+471 silly rollbackFailedOptional Starting
+472 silly rollbackFailedOptional Finishing
+473 silly runTopLevelLifecycles Starting
+474 silly runTopLevelLifecycles Finishing
+475 silly install printInstalled
+476 warn enoent ENOENT: no such file or directory, open '/home/fred/Desktop/test/wifi/package.json'
+477 warn wifi No description
+478 warn wifi No repository field.
+479 warn wifi No README data
+480 warn wifi No license field.
+481 verbose stack Error: socketwatcher@0.2.1 install: `node-gyp rebuild`
+481 verbose stack Exit status 1
+481 verbose stack     at EventEmitter.<anonymous> (/home/fred/Downloads/node-v6.2.0-linux-x64/lib/node_modules/npm/lib/utils/lifecycle.js:245:16)
+481 verbose stack     at emitTwo (events.js:106:13)
+481 verbose stack     at EventEmitter.emit (events.js:191:7)
+481 verbose stack     at ChildProcess.<anonymous> (/home/fred/Downloads/node-v6.2.0-linux-x64/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+481 verbose stack     at emitTwo (events.js:106:13)
+481 verbose stack     at ChildProcess.emit (events.js:191:7)
+481 verbose stack     at maybeClose (internal/child_process.js:850:16)
+481 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+482 verbose pkgid socketwatcher@0.2.1
+483 verbose cwd /home/fred/Desktop/test/wifi
+484 error Linux 4.4.0-47-generic
+485 error argv "/home/fred/Downloads/node-v6.2.0-linux-x64/bin/node" "/home/fred/Downloads/node-v6.2.0-linux-x64/bin/npm" "install" "pcap"
+486 error node v6.2.0
+487 error npm  v3.8.9
+488 error code ELIFECYCLE
+489 error socketwatcher@0.2.1 install: `node-gyp rebuild`
+489 error Exit status 1
+490 error Failed at the socketwatcher@0.2.1 install script 'node-gyp rebuild'.
+490 error Make sure you have the latest version of node.js and npm installed.
+490 error If you do, this is most likely a problem with the socketwatcher package,
+490 error not with npm itself.
+490 error Tell the author that this fails on your system:
+490 error     node-gyp rebuild
+490 error You can get information on how to open an issue for this project with:
+490 error     npm bugs socketwatcher
+490 error Or if that isn't available, you can get their info via:
+490 error     npm owner ls socketwatcher
+490 error There is likely additional logging output above.
+491 verbose exit [ 1, true ]
